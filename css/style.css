@@ -1,0 +1,454 @@
+.realHome {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgb(86, 79, 86) 3%, rgb(136, 129, 124) 38%, rgb(112, 108, 114) 68%, rgb(254, 254, 254) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 500% 500%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.wave {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+  25% {
+    transform: translateX(-25%);
+  }
+  50% {
+    transform: translateX(-50%);
+  }
+  75% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+.cards {
+  display: none;
+  margin: 0 auto;
+  width: 20%;
+  padding: 40px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: ghostwhite;
+  border-color: lightgrey;
+}
+
+.title {
+  font-size: 300px;
+  position: relative;
+}
+
+.title.visible {
+  font-size: 100px;
+  transition: ease-in 1s;
+}
+
+.title:hover + .cards {
+  display: block;
+  margin: auto;
+}
+
+.cards.visible {
+  display: block;
+  margin-bottom: 100px;
+}
+
+.cards h3 {
+  font-size: 15px;
+  font-family: "Poppins", Helvertica, sans-serif;
+}
+
+.cards input {
+  border-radius: 5px;
+  width: 80%;
+}
+
+.cards .submit {
+  margin-top: 20px;
+}
+
+.cards p {
+  margin-top: 40px;
+}
+
+.cards .accountB, .submit {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.cards .accountB:after, .submit:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(50, 160, 182);
+  border-radius: 10rem;
+  z-index: -2;
+}
+.cards .accountB:before, .submit:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #226b7a;
+  transition: all 0.3s;
+  border-radius: 10rem;
+  z-index: -1;
+}
+.cards .accountB:hover, .submit:hover {
+  color: #fff;
+}
+.cards .accountB:hover:before, .submit:hover:before {
+  width: 100%;
+}
+
+.realLogin {
+  background: silver;
+}
+
+.signContainer {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  padding: 30px;
+  height: 450px;
+  justify-content: center;
+  margin-top: 100px;
+  border: 1px rgba(215, 1, 215, 0.1) solid;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.signContainer h1 {
+  font-size: 50px;
+  padding-left: 80px;
+  border-bottom: 8px solid;
+  -o-border-image: linear-gradient(to right, rgb(112, 108, 114) 68%, rgb(254, 254, 254)) 10;
+     border-image: linear-gradient(to right, rgb(112, 108, 114) 68%, rgb(254, 254, 254)) 10;
+  font-family: "Poppins", Helvertica, sans-serif;
+  color: rgba(0, 0, 0, 0.708);
+}
+
+.signContainer h3 {
+  font-size: 15px;
+}
+
+.signContainer input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 40px;
+  width: 275px;
+  height: 20px;
+  margin-left: 14px;
+}
+
+.signContainer input:hover {
+  opacity: 0.4;
+}
+
+.signContainer input:focus {
+  opacity: 5;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 5px;
+}
+
+.login h2 {
+  font-size: 40px;
+}
+
+.signContainer p {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.signContainer button {
+  width: 275px;
+  height: 30px;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-left: 15px;
+}
+
+.signContainer button:hover {
+  cursor: pointer;
+}
+
+.realNewsfeed {
+  background-color: gray;
+  /* opacity: .6; */
+}
+
+.newsfeed {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  border-radius: 20px;
+}
+
+.newsContainer {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+
+.newsContainer input {
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 16px;
+  margin-right: 8px;
+  width: 70%;
+  background-color: #f0f2f5;
+}
+
+.newsContainer button {
+  background-color: #008CBA;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+.newsContainer button i {
+  font-size: 20px;
+  padding: 25px;
+}
+
+.profileB {
+  background-color: #fff;
+  color: #008CBA;
+  border: 1px solid #008CBA;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+/* Style for the post container */
+.postC {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+/* Style for the post title */
+.h1Display {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+/* Style for the delete button */
+.deleteDisplay {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  position: absolute;
+  right: 389px;
+}
+
+/* Style for the comment container */
+.commentContainer {
+  margin-top: 10px;
+}
+
+/* Style for the input box */
+.commentDisplay {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  margin-right: 10px;
+}
+
+/* Style for the post comment button */
+.postComDisplay {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  width: 80px;
+  height: 35px;
+}
+
+/* Style for the previous comments */
+.commentContainer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.comCom {
+  /* border: 2px solid black; */
+  width: 600px;
+  border-radius: 10px;
+  height: 40;
+  margin-left: 6px;
+  padding: 10px;
+}
+
+.commentDisplay {
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  font-size: 16px;
+  margin-right: 8px;
+  width: 70%;
+  background-color: white;
+  height: 10px;
+  border-radius: 10px;
+}
+
+.signedIn {
+  color: black;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
+.name {
+  color: #008CBA;
+}
+
+.test {
+  background-color: silver;
+  /* border-bottom: 2px solid black; */
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.indieComment {
+  display: flex;
+  flex-direction: column; /* Change the flex-direction to column */
+  align-items: flex-start;
+  margin-bottom: 5px;
+  background-color: #008CBA;
+  border-radius: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.indieComment h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  color: whitesmoke;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 18px;
+}
+
+.indieComment p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1c1e21;
+  margin-top: 4px;
+  padding-left: 10px;
+  padding-right: 18px;
+  margin-bottom: 6px;
+}
+
+.indieComment p:first-letter {
+  text-transform: capitalize;
+}
+
+.yourCommentC {
+  background: silver;
+  /* border-bottom: 2px solid black; */
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.run {
+  background-color: silver;
+}/*# sourceMappingURL=style.css.map */

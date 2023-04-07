@@ -1,0 +1,40 @@
+/* body {background-color: lightgray}
+
+
+
+
+.cards {
+    margin: 0 auto;
+    width: 20%;
+    padding: 40px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    border-color: lightgrey;
+  }
+  
+  .cards h3 {
+    font-size: 15px;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .cards input {
+    border-radius: 5px;
+    width: 80%;
+  }
+  .cards .submit {
+margin-top: 20px;  }
+
+.cards p {
+    margin-top: 40px;
+}
+.cards .accountB {
+border: none;
+background-color: gainsboro;
+}
+
+.cards .accountB:hover {
+
+} */
